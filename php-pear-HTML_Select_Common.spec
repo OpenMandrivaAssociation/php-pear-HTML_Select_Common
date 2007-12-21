@@ -19,6 +19,7 @@ Requires:	php-pear
 Obsoletes:	php-pear-HTML_Select
 BuildArch:	noarch
 BuildRequires:	dos2unix
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 Provides <select>lists for:
