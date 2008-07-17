@@ -8,7 +8,7 @@
 Summary:	%{_pearname} - small classes to handle common <select> lists
 Name:		php-pear-%{_pearname}
 Version:	1.1
-Release:	%mkrel 7
+Release:	%mkrel 8
 License:	PHP License
 Group:		Development/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tar.bz2
@@ -19,7 +19,7 @@ Requires:	php-pear
 Obsoletes:	php-pear-HTML_Select
 BuildArch:	noarch
 BuildRequires:	dos2unix
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Provides <select>lists for:
