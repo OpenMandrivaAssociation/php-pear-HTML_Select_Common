@@ -6,7 +6,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.1
-Release:	%mkrel 11
+Release:	%mkrel 12
 Summary:	Small classes to handle common <select> lists
 License:	PHP License
 Group:		Development/PHP
