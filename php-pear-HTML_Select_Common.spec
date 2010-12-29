@@ -5,13 +5,13 @@
 %define		_requires_exceptions pear(HTML/Select/Common/UKCounty.php)\\|pear(HTML/Select/Common/USState.php)\\|pear(HTML/Select/Common/FRDepartements.php)\\|pear(HTML/Select/Common/Country.php)
 
 Name:		php-pear-%{upstream_name}
-Version:	1.1
-Release:	%mkrel 12
+Version:	1.2.0
+Release:	%mkrel 1
 Summary:	Small classes to handle common <select> lists
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/HTML_Select_Common/
-Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}.tar.bz2
+Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}.tgz
 Requires(post): php-pear
 Requires(preun): php-pear
 Requires:	php-pear
@@ -29,6 +29,8 @@ Provides <select>lists for:
 %prep
 %setup -q -c
 mv package.xml %{upstream_name}-%{version}/%{upstream_name}.xml
+
+chmod 644 %{upstream_name}-%{version}/examples/*
 
 %install
 rm -rf %{buildroot}
@@ -62,7 +64,7 @@ fi
 
 %files
 %defattr(-,root,root)
-%doc %{upstream_name}-%{version}/%{_subclass}/Common/examples
+%doc %{upstream_name}-%{version}/examples
 %{_datadir}/pear/%{_class}
 %{_datadir}/pear/packages/%{upstream_name}.xml
 
