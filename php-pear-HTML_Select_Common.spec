@@ -4,7 +4,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.2.0
-Release:	4
+Release:	5
 Summary:	Small classes to handle common <select> lists
 License:	PHP License
 Group:		Development/PHP
